@@ -1,0 +1,143 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type = "text/css" href = "style.css">
+<script>
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+</script>
+
+<style>
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #FFFFFF;
+  color: black;
+} 
+
+.Button{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+#moveup{
+	position: relative;
+	top: -50px;
+	left: -50px;
+}
+
+.topnav{
+	position: relative;
+	top: -10px;
+}
+</style>
+
+<body>
+<!-- Navbar (sit on top) -->
+
+<div class="w3-top" id = "hideonphone">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>IAT</b>343</a>
+    <!-- Float links to the right. Hide them on small screens -->
+		<!-- Mobile -->
+<div class="topnav">
+	<a href="#home" class="active"><br /></a>
+	<!-- Navigation links (hidden by default) -->
+	<div id="myLinks">
+		<a href="index.html"  class="w3-bar-item w3-button">Home</a> <br/> <br/>
+		<a href="script.html"  class="w3-bar-item w3-button">Script</a> <br/> <br/>
+		<a href="concepts.html" class="w3-bar-item w3-button">Character/<br/>Environment</a><br/> <br/>  <br/>
+		<a href="storyboard.html" class="w3-bar-item w3-button">Storyboard</a> <br/> <br/>
+		<a href="draft.html" class="w3-bar-item w3-button">Draft Animation</a> <br/> <br/>
+		<a href="final.html" class="w3-bar-item w3-button">Final Animation</a> <br/> <br/>
+	</div>
+	<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<div class = "Button"></div>
+		<div class = "Button"></div>
+		<div class = "Button"></div>
+	</a>
+</div> 
+    <div class="w3-right w3-hide-small" id = "moveup">
+	  <a href="index.html"  class="w3-bar-item w3-button">Home</a>
+      <a href="script.html"  class="w3-bar-item w3-button">Script</a>
+	  <a href="concepts.html" class="w3-bar-item w3-button">Character/Environment Concepts</a>
+	  <a href="storyboard.html" class="w3-bar-item w3-button">Storyboard</a>
+	  <a href="draft.html" class="w3-bar-item w3-button">Draft Animation</a>
+	  <a href="final.html" class="w3-bar-item w3-button">Final Animation</a>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-32" id="script">
+	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Script</h3>
+</div>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Iceboy and Firegirl</span></h5>
+    <p>The world is destroyed because of human pollution. Everything around is grey and ashy. The cities are long gone, the earth is dry and there is no greenery. 
+	   There are only two people left on the earth: the fire girl and the ice boy. One has emerged from a disrupting volcano and the other one from the icicle that ones fell from the sky.</p>
+    <p>They met accidentally while wandering the earth and became close friends. And although they were close friends, they never dared to touch each other because if they do, they both would disappear. 
+	   However, one day, after looking back at the dried out and miserable world that they were living in, the friends made a decision.
+	   They decided to sacrifice themselves for the sake of life for they knew that together they are capable of curing this eternal drought. 
+	   They hugged - for the first and last time, becoming water that sipped through the dry earth and helped the first sprout of the new life to appear.</p>
+	   <!-- Block Paragraph
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p>1</p>
+      <p>2</p>
+    </div>
+	-->
+	<h4>Credit to:</h4>
+    <h5 id = "title"><a href = "https://store.steampowered.com/app/1003480/Fireboy__Watergirl_Elements/"><i>Fireboy and Watergirl:Elements</i> by Oslo Albet</a></h3>
+    
+    <p><strong>Update:</strong> Jan/22/2019</p>
+    <p><strong>Detail:</strong> Draft Script</p>
+  </div>
+</div>

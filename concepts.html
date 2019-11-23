@@ -1,0 +1,273 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type = "text/css" href = "style.css">
+<script>
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+</script>
+
+<style>
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #FFFFFF;
+  color: black;
+} 
+
+.Button{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+#moveup{
+	position: relative;
+	top: -50px;
+	left: -50px;
+}
+
+.topnav{
+	position: relative;
+	top: -10px;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#title{
+	font-weight:bold;
+	font-size: 150%;
+}
+
+#smaller{
+	font-size: 100%;
+	font-weight:400;
+}
+</style>
+
+<body>
+<!-- Navbar (sit on top) -->
+
+<div class="w3-top" id = "hideonphone">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>IAT</b>343</a>
+    <!-- Float links to the right. Hide them on small screens -->
+		<!-- Mobile -->
+<div class="topnav">
+	<a href="#home" class="active"><br /></a>
+	<!-- Navigation links (hidden by default) -->
+	<div id="myLinks">
+		<a href="index.html"  class="w3-bar-item w3-button">Home</a> <br/> <br/>
+		<a href="script.html"  class="w3-bar-item w3-button">Script</a> <br/> <br/>
+		<a href="concepts.html" class="w3-bar-item w3-button">Character/<br/>Environment</a><br/> <br/>  <br/>
+		<a href="storyboard.html" class="w3-bar-item w3-button">Storyboard</a> <br/> <br/>
+		<a href="draft.html" class="w3-bar-item w3-button">Draft Animation</a> <br/> <br/>
+		<a href="final.html" class="w3-bar-item w3-button">Final Animation</a> <br/> <br/>
+	</div>
+	<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<div class = "Button"></div>
+		<div class = "Button"></div>
+		<div class = "Button"></div>
+	</a>
+</div> 
+    <div class="w3-right w3-hide-small" id = "moveup">
+	  <a href="index.html"  class="w3-bar-item w3-button">Home</a>
+      <a href="script.html"  class="w3-bar-item w3-button">Script</a>
+	  <a href="concepts.html" class="w3-bar-item w3-button">Character/Environment Concepts</a>
+	  <a href="storyboard.html" class="w3-bar-item w3-button">Storyboard</a>
+	  <a href="draft.html" class="w3-bar-item w3-button">Draft Animation</a>
+	  <a href="final.html" class="w3-bar-item w3-button">Final Animation</a>
+    </div>
+  </div>
+</div>
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<!-- Second Grid: Resent -->
+  <!-- About Section -->
+  <!--
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="image/icefire.png" class="w3-round w3-image w3-opacity-min" id = "storyimage" alt="Table Setting" width="550" height="300"> <br /> <br /> <br />
+	 <img src="image/draft.png" class="w3-round w3-image w3-opacity-min" id = "storyimage" alt="Table Setting" width="550" height="300">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Main Chararacters</h1><br>
+      <h5 class="w3-center">Iceboy & Firegirl</h5>
+      <p class="w3-large">The characters have a charming and doll-like look to them, which is supposed to make the viewer feel more empathy toward them and their stories. 
+      <span class="w3-tag w3-light-grey"></span></p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Low poly models with bright and glowy surface make them stand out against the background of a dry, polluted and destroyed world.</p>
+    </div>
+  </div>
+  -->
+<div class="w3-panel w3-text-grey">
+</div>
+<div>
+  <img class = "center" src="image/icefire.png" align = "middle" style="width:30%">
+</div>
+
+    <div id = "center" id = "title">
+      <h1 class="w3-center" id = "title">Main Characters:</h1>
+      <p class="" id = "smaller">The characters have a charming and doll-like look to them, which is supposed to make the viewer feel more empathy toward them and their stories. 
+      <span class="w3-tag w3-light-grey"></span></p>
+      <p class="w3-large w3-text-grey w3-hide-medium"></p>
+    </div>
+	
+<div class="w3-panel w3-text-grey">
+<h4><center></center></h4>
+</div>
+<div class="w3-row">
+<div>
+  <img class = "center" src="image/draft.png" alt = "Iceboy Draft" style="width:30%">
+</div>
+
+    <div id = "center">
+      <h1 class="w3-center" id = "title">Iceboy Draft:</h1>
+      <p class="" id = "smaller">
+	  Low poly models with bright and glowy surface make them stand out against the background of a dry, polluted and destroyed world.
+      <span class="w3-tag w3-light-grey"></span></p>
+      <p class="w3-large w3-text-grey w3-hide-medium"></p>
+    </div>
+
+<hr />
+
+
+<div>
+  <img class = "center" src="image/Playground.png" align = "middle" style="width:30%">
+</div>
+
+    <div id = "center">
+      <h1 class="w3-center" id = "title">Abandoned Playground Draft:</h1>
+      <p class="" id = "smaller">
+	  The environment is grey, dark and full of cracks in the ground due to the drought. 
+      <span class="w3-tag w3-light-grey"></span></p>
+      <p class="w3-large w3-text-grey w3-hide-medium"></p>
+    </div>
+	
+	
+
+
+	
+<div>
+  <img class = "center" src="image/Bridge.png" align = "middle" style="width:30%">
+</div>
+
+    <div id = "center">
+      <h1 class="w3-center" id = "title">Mountainside Draft:</h1>
+      <h5 class="w3-center"></h5>
+      <p class="" id = "smaller"> 
+	  It creates a very depressing and miserable atmosphere around the vibrant looking main characters. 
+      <span class="w3-tag w3-light-grey"></span></p>
+      <p class="w3-large w3-text-grey w3-hide-medium"></p>
+    </div>
+	<br />
+<div>
+  <img class = "center" src="image/Sprouts.PNG" align = "middle" style="width:30%">
+</div>
+
+    <div id = "center">
+      <h1 class="w3-center" id = "title">Sprout:</h1>
+      <h5 class="w3-center"></h5>
+      <p class="" id = "smaller">
+	  Low poly sprout that appears after the final scene hug, is as bright and full of life as the two main characters. 
+	  It has a striking, bold and eager character to it.
+      <span class="w3-tag w3-light-grey"></span></p>
+      <p class="w3-large w3-text-grey w3-hide-medium"></p>
+    </div>
+	
+	
+<hr />
+	<br />
+<div>
+  <img class = "center" src="image/fox.png" align = "middle" style="width:50%">
+</div>
+
+    <div id = "center">
+      <h1 class="w3-center" id = "title"><a href = "https://www.zplay.com/cn/index.html"><i>The Little Fox</i> by Zplay Technology CO.:</a></h1>
+      <h5 class="w3-center"></h5>
+      <p class="" id = "smaller">
+	  Our group was inspired by a charming and alluring look of the character from The Little Fox game because, despite rather a blocky design, 
+	  the fox still managed to feel delicate and tender.
+      <span class="w3-tag w3-light-grey"></span></p>
+      <p class="w3-large w3-text-grey w3-hide-medium"></p>
+    </div>
+	
+	<br />
+	
+<div>
+  <img class = "center" src="image/monument Valley.png" align = "middle" style="width:50%">
+</div>
+	
+	    <div id = "center">
+      <h1 class="w3-center" id = "title"><a href = "https://www.monumentvalleygame.com/mv2"><i>Monument Valley</i> by Ustwo Game:</a></h1>
+      <h5 class="w3-center"></h5>
+      <p class="" id = "smaller">
+	  In terms of the character environment, Monument Valley game was taken as our next animation inspiration for we absolutely adored this rectangular, 
+	  yet elegant feel of the castles, which do not disrupt the harmony of the scene.
+      <span class="w3-tag w3-light-grey"></span></p>
+      <p class="w3-large w3-text-grey w3-hide-medium"></p>
+    </div>
+	
+<br/> <br/>
+<hr/>
+</div>

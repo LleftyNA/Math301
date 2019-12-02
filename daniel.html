@@ -171,15 +171,15 @@ function myFunction() {
   </div>
   -->
 <div class="w3-container w3-padding-32" id="people">
-	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Solution</h3>
+	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">The Layer method</h3>
 </div>
 <div>
-  <img class = "center" src="image/icefire.png" align = "middle" style="width:30%">
+  <img class = "center" src="image/DSpart/tips.jpg" align = "middle" style="width:30%">
 </div>
 
     <div id = "center" id = "title">
-      <h1 class="w3-center" id = "title">Part 1:</h1>
-      <p class="" id = "smaller"> Detail 1
+      <h1 class="w3-center" id = "title">1:Tips corners</h1>
+      <p class="" id = "smaller"> Turn tips corners to match adjacent center block. (This step actually doesn't matter, because tips move independently. But it will be easier to see.)
       <span class="w3-tag w3-light-grey"></span></p>
       <p class="w3-large w3-text-grey w3-hide-medium"></p>
     </div>
@@ -189,18 +189,18 @@ function myFunction() {
 </div>
 <div class="w3-row">
 <div>
-  <img class = "center" src="image/draft.png" alt = "Iceboy Draft" style="width:30%">
+  <img class = "center" src="image/DSpart/corner.jpg" alt = "Iceboy Draft" style="width:20%">
 </div>
 
     <div id = "center">
-      <h1 class="w3-center" id = "title">Part 2:</h1>
+      <h1 class="w3-center" id = "title">2:Match yellow(or bottom face) center block</h1>
       <p class="" id = "smaller">
-	  Detail 2
+	  By observing color of tips corners and adjacent center blocks, we turn the three center blocks to a same face. Sometime it requires a little time to solve the face which three center blocks can all turn to the face.
       <span class="w3-tag w3-light-grey"></span></p>
       <p class="w3-large w3-text-grey w3-hide-medium"></p>
     </div>
 
-<hr />
+
 
 
 <div>
@@ -208,9 +208,13 @@ function myFunction() {
 </div>
 
     <div id = "center">
-      <h1 class="w3-center" id = "title">Part 3:</h1>
+      <h1 class="w3-center" id = "title">3:Solving bottom face and layer(need new figure)</h1>
       <p class="" id = "smaller">
-	  Detail 3
+	  Now we need to solve the yellow (bottom) face and adjacent layer. </br>
+	  We already match tips corners and center blocks.
+	  So there are three edges blocks which we need to solve and we don't care about upper layer for now. There are two situations:</br>
+	  </br>First : the required edge block is in upper layer, then we just need to turn the block to match the center color. Here, if the edge block is at left side, then we are using left side algorithm: <b>R U' R</b>. If it is at right side, then, we are using: <b>L' U L</b>.
+	  </br></br>Second : the required edge block is at bottom layer, then we need to move it to upper layer first by:<b>R U/U' R'</b>. We don't care which block will be move down, the only thing we care is moving the required block to upper layer, so we can use first step to move it to the right place.
       <span class="w3-tag w3-light-grey"></span></p>
       <p class="w3-large w3-text-grey w3-hide-medium"></p>
     </div>
@@ -224,15 +228,19 @@ function myFunction() {
 </div>
 
     <div id = "center">
-      <h1 class="w3-center" id = "title">Part 4:</h1>
+      <h1 class="w3-center" id = "title">4:Final layer and situations(need new figure)</h1>
       <h5 class="w3-center"></h5>
       <p class="" id = "smaller"> 
-	  Detail 4
+	  In this part, we need to solve the remainning edges without moving the bottom face and layer.
+	  </br> Let's match the upper layer center with bottom solved layer. Then, there will be three situations:
+	  </br> First double edges flip: <b>L R' L' R</b>
+	  </br> Second edges face double-three cycle: moving face to left:<b>R U R' U R U R'</b> to right:<b>R U' R' U' R U' R'</b>
+	  </br> Third triple edges swap: if the solved lay is at left:<b>R' U' L' U L R</b> at right:<b>L U R U' R' L'</b>
       <span class="w3-tag w3-light-grey"></span></p>
       <p class="w3-large w3-text-grey w3-hide-medium"></p>
     </div>
 	<br />
-	
+<!--	
 <div>
   <img class = "center" src="image/Sprouts.PNG" align = "middle" style="width:30%">
 </div>
@@ -276,7 +284,7 @@ function myFunction() {
       <span class="w3-tag w3-light-grey"></span></p>
       <p class="w3-large w3-text-grey w3-hide-medium"></p>
     </div>
-	
+-->
 <br/> <br/>
 <hr/>
 </div>

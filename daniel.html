@@ -104,6 +104,7 @@ function myFunction() {
 <body>
 <!-- Navbar (sit on top) -->
 
+
 <div class="w3-top" id = "hideonphone">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
     <a href="#home" class="w3-bar-item w3-button"><b>Math</b>301</a>
@@ -118,7 +119,7 @@ function myFunction() {
 		<a href="yibo.html" class="w3-bar-item w3-button">Yibo:Possible moves</a><br/> <br/>
 		<a href="tauseef.html" class="w3-bar-item w3-button">Tauseef:Impossible moves</a> <br/> <br/>
 		<a href="daniel.html" class="w3-bar-item w3-button">Daniel:Solution and tips</a> <br/> <br/>
-		<a href="extra.html" class="w3-bar-item w3-button">Extra</a> <br/> <br/>
+		<a href="extra.html" class="w3-bar-item w3-button">Daniel:Fundamental theorem of pyraminx</a> <br/> <br/>
 	</div>
 	<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
 	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -141,7 +142,7 @@ function myFunction() {
 	  <a href="yibo.html" class="w3-bar-item w3-button">Yibo:Possible moves</a>
 	  <a href="tauseef.html" class="w3-bar-item w3-button">Tauseef:Impossible moves</a>
 	  <a href="daniel.html" class="w3-bar-item w3-button">Daniel:Solution and tips</a>
-	  <a href="extra.html" class="w3-bar-item w3-button">Extra</a>
+	  <a href="extra.html" class="w3-bar-item w3-button">Daniel:Fundamental theorem of pyraminx</a>
 
 
     </div>
@@ -204,7 +205,7 @@ function myFunction() {
 
 
 <div>
-  <img class = "center" src="image/Playground.png" align = "middle" style="width:30%">
+  <img class = "center" src="image/DSpart/blayer.jpg" align = "middle" style="width:30%">
 </div>
 
     <div id = "center">
@@ -224,7 +225,7 @@ function myFunction() {
 
 	
 <div>
-  <img class = "center" src="image/Bridge.png" align = "middle" style="width:30%">
+  <img class = "center" src="image/DSpart/flayer.jpg" align = "middle" style="width:50%">
 </div>
 
     <div id = "center">
@@ -233,8 +234,8 @@ function myFunction() {
       <p class="" id = "smaller"> 
 	  In this part, we need to solve the remainning edges without moving the bottom face and layer.
 	  </br> Let's match the upper layer center with bottom solved layer. Then, there will be three situations:
-	  </br> First double edges flip: <b>L R' L' R (There is one more cycle, need double check)</b> 
-	  </br> Second edges face double-three cycle: moving face to left:<b>R U R' U R U R'</b> to right:<b>R U' R' U' R U' R'</b>
+	  </br> First double edges flip: <b>L R' L' R U' R U R' ([L R'][U' R])</b> 
+	  </br> Second edges double-three cycle: moving face from left to right:<b>R U R' U R U R'</b> from right to left:<b>R U' R' U' R U' R'</b>
 	  </br> Third triple edges swap: if the solved lay is at left:<b>R' U' L' U L R</b> at right:<b>L U R U' R' L'</b>
       <span class="w3-tag w3-light-grey"></span></p>
       <p class="w3-large w3-text-grey w3-hide-medium"></p>

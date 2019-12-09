@@ -99,6 +99,18 @@ function myFunction() {
 	font-size: 100%;
 	font-weight:400;
 }
+
+
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 </style>
 
 <body>
@@ -118,7 +130,7 @@ function myFunction() {
 		<a href="yibo.html" class="w3-bar-item w3-button">Yibo:Possible moves</a><br/> <br/>
 		<a href="tauseef.html" class="w3-bar-item w3-button">Tauseef:Impossible moves</a> <br/> <br/>
 		<a href="daniel.html" class="w3-bar-item w3-button">Daniel:Solution and tips</a> <br/> <br/>
-		<a href="extra.html" class="w3-bar-item w3-button">Extra</a> <br/> <br/>
+		<a href="extra.html" class="w3-bar-item w3-button">Daniel:Fundamental theorem of pyraminx</a> <br/> <br/>
 	</div>
 	<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
 	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -141,16 +153,12 @@ function myFunction() {
 	  <a href="yibo.html" class="w3-bar-item w3-button">Yibo:Possible moves</a>
 	  <a href="tauseef.html" class="w3-bar-item w3-button">Tauseef:Impossible moves</a>
 	  <a href="daniel.html" class="w3-bar-item w3-button">Daniel:Solution and tips</a>
-	  <a href="extra.html" class="w3-bar-item w3-button">Extra</a>
+	  <a href="extra.html" class="w3-bar-item w3-button">Daniel:Fundamental theorem of pyraminx</a>
 
 
     </div>
   </div>
 </div>
-<hr />
-<hr />
-<hr />
-<hr />
 <hr />
 <!-- Second Grid: Resent -->
   <!-- About Section -->
@@ -172,13 +180,23 @@ function myFunction() {
   -->
 <div class="w3-panel w3-text-grey">
 </div>
+<div class="w3-container w3-padding-32" id="people">
+	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Fundamental theorem of pyraminx</h3>
+</div>
 <div>
-  <img class = "center" src="image/icefire.png" align = "middle" style="width:30%">
+  <img class = "center" src="image/DSpart/orientation.jpg" align = "middle" style="width:30%">
 </div>
 
     <div id = "center" id = "title">
-      <h1 class="w3-center" id = "title">Part 1:</h1>
-      <p class="" id = "smaller"> Detail 1
+      <h1 class="w3-center" id = "title">Orientation:</h1>
+      <p class="" id = "smaller"> We represent a configuration by </br>
+	  <b>A permutation of the 4 center blocks </br>
+		 A permutation of the 6 edge blocks </br>
+		 An orientation vector of the 4 center blocks </br>
+		 An orientation vector of the 6 center blocks </br>
+	  </b>
+	  Then, marking the primary facet of blocks. For an edge block, mark the sticker with a 0/+ if it is in the primary facet,
+	  and mark the other stricker on the same block with a 1. For center block, I mark 0/+, 1, 2 from clockwise direction around the block.
       <span class="w3-tag w3-light-grey"></span></p>
       <p class="w3-large w3-text-grey w3-hide-medium"></p>
     </div>
@@ -188,30 +206,80 @@ function myFunction() {
 </div>
 <div class="w3-row">
 <div>
-  <img class = "center" src="image/draft.png" alt = "Iceboy Draft" style="width:30%">
+  <img class = "center" src="image/DSpart/set.jpg" alt = "Iceboy Draft" style="width:30%">
 </div>
 
     <div id = "center">
-      <h1 class="w3-center" id = "title">Part 2:</h1>
+      <h1 class="w3-center" id = "title">Vector:</h1>
       <p class="" id = "smaller">
-	  Detail 2
+	  Let the position vector be 4-tuple (
+ρ
+,
+σ
+,
+v
+,
+w
+). 
       <span class="w3-tag w3-light-grey"></span></p>
       <p class="w3-large w3-text-grey w3-hide-medium"></p>
     </div>
 
-<hr />
 
 
 <div>
-  <img class = "center" src="image/Playground.png" align = "middle" style="width:30%">
+  <img class = "center" src="image/DSpart/notation.jpg" align = "middle" style="width:30%">
 </div>
 
     <div id = "center">
-      <h1 class="w3-center" id = "title">Part 3:</h1>
+      <h1 class="w3-center" id = "title">Notations and vectors:</h1>
       <p class="" id = "smaller">
-	  Detail 3
+	  There are four basic notation moves, F U R L. And inverse. </br>
+	  The permutation and vectors are showed in the table below:
       <span class="w3-tag w3-light-grey"></span></p>
       <p class="w3-large w3-text-grey w3-hide-medium"></p>
+	  <table>
+  <tr>
+    <th>Notations</th>
+    <th>ρ</th>
+    <th>σ</th>
+    <th>v</th>
+	<th>w</th>
+  </tr>
+  <tr>
+    <td>Right clockwise</td>
+    <td>e</td>
+    <td>(4,5,6)</td>
+    <td>(0,0,0,2)</td>
+	<td>(0,0,0,0,1,1)</td>
+  </tr>
+  <tr>
+    <td>Left clockwise</td>
+    <td>e</td>
+    <td>(1,2,6)</td>
+    <td>(0,2,0,0)</td>
+	<td>(1,1,0,0,0,0)</td>
+  </tr>
+  <tr>
+    <td>Upper clockwise</td>
+    <td>e</td>
+    <td>(1,5,3)</td>
+    <td>(2,0,0,0)</td>
+	<td>(0,0,1,0,1,0)</td>
+  </tr>
+  <tr>
+    <td>Right clockwise</td>
+    <td>e</td>
+    <td>(2,3,4)</td>
+    <td>(0,0,2,0)</td>
+	<td>(0,1,0,0,1,0)</td>
+  </tr>
+</table>
+	<p class="" id = "smaller">
+	  For inverse of it, the parity of permutations and edge-vectors stay the same. </br>
+	  However, the center block vector can twist by it own, so it can be 1.</br>
+	  For example, R' , v is (0,0,0,1). Same for other notations.</br>
+      <span class="w3-tag w3-light-grey"></span></p>
     </div>
 	
 	
@@ -219,62 +287,22 @@ function myFunction() {
 
 	
 <div>
-  <img class = "center" src="image/Bridge.png" align = "middle" style="width:30%">
+  <img class = "center" src="image/DSpart/CC.jpg" align = "middle" style="width:30%">
 </div>
 
     <div id = "center">
-      <h1 class="w3-center" id = "title">Part 4:</h1>
+      <h1 class="w3-center" id = "title">Conclusion:</h1>
       <h5 class="w3-center"></h5>
       <p class="" id = "smaller"> 
-	  Detail 4
+	  a: Parity for permutations. </br>
+	  b: Because of 2k + 1 can be odd or even, that means very single center move is possible.</br>
+	  c: Sum need to be 0(mod 2).</br>
       <span class="w3-tag w3-light-grey"></span></p>
       <p class="w3-large w3-text-grey w3-hide-medium"></p>
     </div>
 	<br />
 	
-<div>
-  <img class = "center" src="image/Sprouts.PNG" align = "middle" style="width:30%">
-</div>
 
-    <div id = "center">
-      <h1 class="w3-center" id = "title">Part 5:</h1>
-      <h5 class="w3-center"></h5>
-      <p class="" id = "smaller">
-	  Detail 5
-      <span class="w3-tag w3-light-grey"></span></p>
-      <p class="w3-large w3-text-grey w3-hide-medium"></p>
-    </div>
-	
-	
-<hr />
-	<br />
-<div>
-  <img class = "center" src="image/fox.png" align = "middle" style="width:50%">
-</div>
-
-    <div id = "center">
-      <h1 class="w3-center" id = "title"><a href = "https://Webby"><i>Reference</i> by WHO:</a></h1>
-      <h5 class="w3-center"></h5>
-      <p class="" id = "smaller">
-	  Detail
-      <span class="w3-tag w3-light-grey"></span></p>
-      <p class="w3-large w3-text-grey w3-hide-medium"></p>
-    </div>
-	
-	<br />
-	
-<div>
-  <img class = "center" src="image/monument Valley.png" align = "middle" style="width:50%">
-</div>
-	
-	    <div id = "center">
-      <h1 class="w3-center" id = "title"><a href = "https://Webby"><i>Reference</i> by WHO:</a></h1>
-      <h5 class="w3-center"></h5>
-      <p class="" id = "smaller">
-	  Detail
-      <span class="w3-tag w3-light-grey"></span></p>
-      <p class="w3-large w3-text-grey w3-hide-medium"></p>
-    </div>
 	
 <br/> <br/>
 <hr/>
